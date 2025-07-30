@@ -1,4 +1,5 @@
 import { ArrowDown } from "lucide-react";
+import PortfolioPic from "/portfoliopic.png";
 
 export const HeroSection = () => {
   return (
@@ -8,15 +9,20 @@ export const HeroSection = () => {
     >
       <div className="container max-w-4xl mx-auto text-center z-10">
         <div className="space-y-6">
+          <img
+            src={PortfolioPic}
+            alt="Boyema Desley"
+            className="w-48 h-48 rounded-full border-4 border-sky-500 mx-auto mb-8 opacity-0 animate-fade-in"
+          />
           <h1 className="text-4xl md:text-6xl font-bold tracking-tight">
             <span className="opacity-0 animate-fade-in"> Hi, I'm</span>
             <span className="text-primary opacity-0 animate-fade-in-delay-1">
               {" "}
-              Pedro
+              Boyema
             </span>
             <span className="text-gradient ml-2 opacity-0 animate-fade-in-delay-2">
               {" "}
-              Machado
+              Desley
             </span>
           </h1>
 
